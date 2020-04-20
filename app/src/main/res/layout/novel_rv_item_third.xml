@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_cover_first"
+        android:layout_width="100dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/image_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView_cover_second"
+        android:layout_width="100dp"
+        android:layout_height="132dp"
+        android:contentDescription="@string/image_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_cover_first"
+        app:layout_constraintEnd_toStartOf="@+id/guideline17"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toTopOf="@+id/imageView_cover_first"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView_cover_third"
+        android:layout_width="100dp"
+        android:layout_height="132dp"
+        android:contentDescription="@string/image_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_cover_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toTopOf="@+id/imageView_cover_second"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView_novel_title_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView_cover_first"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_cover_first"
+        tools:text="今天也要做魔王" />
+
+    <TextView
+        android:id="@+id/textView_novel_title_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView_cover_second"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_cover_second"
+        tools:text="213214213213213122313" />
+
+    <TextView
+        android:id="@+id/textView_novel_title_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView_cover_third"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_cover_third" />
+
+    <TextView
+        android:id="@+id/textView_novel_author_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxEms="9"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_novel_title_first"
+        app:layout_constraintTop_toBottomOf="@+id/textView_novel_title_first" />
+
+    <TextView
+        android:id="@+id/textView_novel_author_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxEms="9"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_novel_title_second"
+        app:layout_constraintTop_toBottomOf="@+id/textView_novel_title_second" />
+
+    <TextView
+        android:id="@+id/textView_novel_author_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxEms="9"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_novel_title_third"
+        app:layout_constraintTop_toBottomOf="@+id/textView_novel_title_third" />
+
+    <ImageView
+        android:id="@+id/imageView_cover_fourth"
+        android:layout_width="100dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/image_content"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/textView_novel_author_first"
+        app:layout_constraintTop_toBottomOf="@+id/textView_novel_author_first"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView_cover_fifth"
+        android:layout_width="100dp"
+        android:layout_height="132dp"
+        android:contentDescription="@string/image_content"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/textView_novel_author_second"
+        app:layout_constraintTop_toTopOf="@+id/imageView_cover_fourth"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView_cover_sixth"
+        android:layout_width="100dp"
+        android:layout_height="132dp"
+        android:contentDescription="@string/image_content"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/textView_novel_author_third"
+        app:layout_constraintTop_toTopOf="@+id/imageView_cover_fifth"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView_novel_title_fourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView_cover_fourth"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_cover_fourth" />
+
+    <TextView
+        android:id="@+id/textView_novel_title_fifth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView_cover_fifth"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_cover_fifth" />
+
+    <TextView
+        android:id="@+id/textView_novel_title_sixth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView_cover_sixth"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_cover_sixth" />
+
+    <TextView
+        android:id="@+id/textView_novel_author_fourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:maxEms="9"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView_novel_title_fourth"
+        app:layout_constraintTop_toBottomOf="@+id/textView_novel_title_fourth" />
+
+    <TextView
+        android:id="@+id/textView_novel_author_fifth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:maxEms="9"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView_novel_title_fifth"
+        app:layout_constraintTop_toBottomOf="@+id/textView_novel_title_fifth" />
+
+    <TextView
+        android:id="@+id/textView_novel_author_sixth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:maxEms="9"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView_novel_title_sixth"
+        app:layout_constraintTop_toBottomOf="@+id/textView_novel_title_sixth" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+</androidx.constraintlayout.widget.ConstraintLayout>

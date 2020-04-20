@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/comicFragment"
+        android:icon="@drawable/ic_import_contacts_black_24dp"
+        android:title="@string/comic"
+        android:visible="true" />
+    <item
+        android:id="@+id/newsFragment"
+        android:icon="@drawable/ic_language_black_24dp"
+        android:title="@string/news"
+        android:visible="true" />
+    <item
+        android:id="@+id/novelFragment"
+        android:icon="@drawable/novel"
+        android:title="@string/novel" />
+    <item
+        android:id="@+id/userFragment"
+        android:icon="@drawable/user_login"
+        android:title="@string/login" />
+</menu>

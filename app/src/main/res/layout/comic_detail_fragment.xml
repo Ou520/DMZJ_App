@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.fragmemt.ComicFragment.ComicDetailFragment">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/imageButton_back"
+            android:layout_centerVertical="true"
+            android:layout_width="41dp"
+            android:layout_height="22dp"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/image_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back_black" />
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            tools:text="漫画作品的标题" />
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_jb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/divider2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_jb">
+
+            <ImageView
+                android:id="@+id/imageView_cover"
+                android:layout_width="142dp"
+                android:layout_height="162dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="2dp"
+                android:contentDescription="@string/image_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/textView_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView_cover"
+                app:layout_constraintTop_toTopOf="@+id/imageView_cover"
+                tools:text="作者" />
+
+            <TextView
+                android:id="@+id/textView_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintStart_toStartOf="@+id/textView_author"
+                app:layout_constraintTop_toBottomOf="@+id/textView_author"
+                tools:text="类型" />
+
+            <TextView
+                android:id="@+id/textView_click_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintStart_toStartOf="@+id/textView_type"
+                app:layout_constraintTop_toBottomOf="@+id/textView_type"
+                tools:text="点击数量" />
+
+            <TextView
+                android:id="@+id/textView_subscription_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintStart_toStartOf="@+id/textView_click_num"
+                app:layout_constraintTop_toBottomOf="@+id/textView_click_num"
+                tools:text="订阅数" />
+
+            <TextView
+                android:id="@+id/textView_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                app:layout_constraintStart_toStartOf="@+id/textView_subscription_num"
+                app:layout_constraintTop_toBottomOf="@+id/textView_subscription_num"
+                tools:text="作品状态" />
+
+            <Button
+                android:id="@+id/button_subscript"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:text="@string/subscript"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_cover"
+                app:layout_constraintStart_toStartOf="@+id/textView_status"
+                tools:text="订阅漫画" />
+
+            <Button
+                android:id="@+id/button_read"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/start_read"
+                app:layout_constraintBottom_toBottomOf="@+id/button_subscript"
+                app:layout_constraintStart_toEndOf="@+id/button_subscript"
+                app:layout_constraintTop_toTopOf="@+id/button_subscript"
+                tools:text="开始阅读" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:contentDescription="@string/image_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_author"
+                app:layout_constraintEnd_toStartOf="@+id/textView_author"
+                app:layout_constraintStart_toEndOf="@+id/imageView_cover"
+                app:layout_constraintTop_toTopOf="@+id/textView_author"
+                app:srcCompat="@drawable/ic_comic_author" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:contentDescription="@string/image_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_type"
+                app:layout_constraintEnd_toStartOf="@+id/textView_type"
+                app:layout_constraintStart_toEndOf="@+id/imageView_cover"
+                app:layout_constraintTop_toTopOf="@+id/textView_type"
+                app:srcCompat="@drawable/ic_comic_type" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:contentDescription="@string/image_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_click_num"
+                app:layout_constraintEnd_toStartOf="@+id/textView_click_num"
+                app:layout_constraintStart_toEndOf="@+id/imageView_cover"
+                app:layout_constraintTop_toTopOf="@+id/textView_click_num"
+                app:srcCompat="@drawable/ic_hot" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:contentDescription="@string/image_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_subscription_num"
+                app:layout_constraintEnd_toStartOf="@+id/textView_subscription_num"
+                app:layout_constraintStart_toEndOf="@+id/imageView_cover"
+                app:layout_constraintTop_toTopOf="@+id/textView_subscription_num"
+                app:srcCompat="@drawable/ic_comic_subcript" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:contentDescription="@string/image_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_status"
+                app:layout_constraintEnd_toStartOf="@+id/textView_status"
+                app:layout_constraintStart_toEndOf="@+id/imageView_cover"
+                app:layout_constraintTop_toTopOf="@+id/textView_status"
+                app:srcCompat="@drawable/ic_comic_static" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_comic_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/introduce" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/announcement" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/author_announcement" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/comic_detail_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout_comic_detail" />
+
+    <TextView
+        android:id="@+id/textView_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_down_black"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:text="动画制作×JK，青春冒险剧！ 嗜设定如命的浅草绿、梦想是动画师的人气读者模特水崎燕、见钱眼开的金森沙耶香。 向着迷宫、向着战场、向着宇宙，张开想象力的翅膀，电击三人娘将创作出最强的世界（映像）！惊异的天才、出现！？" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/episode_rv_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+       />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/episode_rv_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp" />
+
+</LinearLayout>

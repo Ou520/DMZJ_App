@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/rv_third_one"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/image_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/textView_item_third_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_item_third_title"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/rv_third_six"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/image_content"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/rv_third_three"
+        app:layout_constraintTop_toTopOf="@+id/rv_third_five"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/rv_third_three"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/image_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/rv_third_two"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/rv_third_four"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/image_content"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/rv_third_tv_one"
+        app:layout_constraintTop_toBottomOf="@+id/rv_third_tv_one"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/rv_third_five"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/image_content"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/rv_third_two"
+        app:layout_constraintTop_toTopOf="@+id/rv_third_four"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/rv_third_two"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/image_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/rv_third_one"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/rv_third_tv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/rv_third_one"
+        app:layout_constraintTop_toBottomOf="@+id/rv_third_one"
+        tools:text="我的世界" />
+
+    <TextView
+        android:id="@+id/rv_third_tv_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/rv_third_two"
+        app:layout_constraintTop_toTopOf="@+id/rv_third_tv_one"
+        tools:text="我的世界" />
+
+    <TextView
+        android:id="@+id/rv_third_tv_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/rv_third_three"
+        app:layout_constraintTop_toTopOf="@+id/rv_third_tv_two"
+        tools:text="我的世界" />
+
+    <TextView
+        android:id="@+id/rv_third_tv_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rv_third_four"
+        app:layout_constraintTop_toBottomOf="@+id/rv_third_four"
+        tools:text="我的世界" />
+
+    <TextView
+        android:id="@+id/rv_third_tv_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rv_third_five"
+        app:layout_constraintTop_toTopOf="@+id/rv_third_tv_four"
+        tools:text="我的世界" />
+
+    <TextView
+        android:id="@+id/rv_third_tv_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rv_third_six"
+        app:layout_constraintTop_toTopOf="@+id/rv_third_tv_five"
+        tools:text="我的世界" />
+
+    <TextView
+        android:id="@+id/textView_item_third_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

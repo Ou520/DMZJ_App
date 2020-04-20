@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="在这个弱肉强食的世界，与世隔绝的日月岛上强大的兽族单方面狩猎着畜族，而坚强团结的畜族为了生存不停地抗争着，这场战争持续了整整百余年，各族民不聊生。为了打破这一不平等的格局，一些经历过磨难的英雄豪杰正在集结，一支名为“生肖”的组织悄然崛起……" />
+</androidx.constraintlayout.widget.ConstraintLayout>

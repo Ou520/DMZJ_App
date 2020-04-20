@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name" translatable="false">仿动漫之家App</string>
+    <string name="comic">漫画</string>
+    <string name="news">新闻</string>
+    <string name="novel">轻小说</string>
+    <string name="login">我的</string>
+    <string name="recommend">推荐</string>
+    <string name="update">更新</string>
+    <string name="classify">分类</string>
+    <string name="topic">专题</string>
+    <string name="image_content">一张图片</string>
+    <string name="rv_comic_all">全部漫画</string>
+    <string name="find_novel">找小说</string>
+    <string name="catch_novel">追小说</string>
+    <string name="ranking_list">排行榜</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="introduce">作品介绍</string>
+    <string name="announcement">作品公告</string>
+    <string name="author_announcement">作者公告</string>
+    <string name="subscript">订阅漫画</string>
+    <string name="start_read">开始阅读</string>
+</resources>

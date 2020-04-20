@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="TAG_ONE" type="id" />
+    <item name="TAG_SECOND" type="id" />
+    <item name="TAG_THIRD" type="id" />
+    <item name="TAG_SORT" type="id" />
+    <item name="TAG_POSITION" type="id" />
+</resources>
